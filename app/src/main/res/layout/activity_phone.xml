@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Phone">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="220dp"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:background="@drawable/header_login"
+        android:id="@+id/bgHeader"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:elevation="5dp"
+        android:id="@+id/tvDesc"
+        android:textSize="17sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:text="Welcome Login to Get Acess"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:elevation="5dp"
+        android:id="@+id/tvLogin"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:text="TradeGo"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/tvDesc"
+        android:transitionName="tvLogin"
+        android:layout_below="@+id/tvDesc"/>
+
+    <ImageView android:layout_height="134dp"
+        android:layout_width="134dp"
+        android:id="@+id/circle1"
+        android:layout_marginTop="-80dp"
+        android:layout_below="@+id/bgHeader"
+        android:src="@drawable/circletransparant"
+        android:layout_marginRight="-100dp"
+        android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/circle1"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="May I ask you phone number?"/>
+
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/linearLayout"
+            android:layout_below="@id/textView"
+            android:padding="15dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_height="wrap_content"
+                android:layout_width="120dp"
+                android:id="@+id/spinnerCountries"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/editTextPhone"
+                android:maxLength="10"
+                android:hint="enter your number"
+                android:digits="0123456789"
+                android:inputType="number"
+                android:layout_weight="2"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/buttonContinue"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linearLayout"
+            android:textColor="#ffffff"
+            android:text="Continue"
+            android:textAllCaps="false"/>
+
+
+
+</RelativeLayout>

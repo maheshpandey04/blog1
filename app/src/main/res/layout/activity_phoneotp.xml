@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Phoneotp">
+    <RelativeLayout
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_height="120dp"
+            android:layout_width="120dp"
+            android:background="@drawable/app"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_height="120dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/waves"
+        android:id="@+id/imageView"
+        android:layout_marginTop="-50dp"
+        android:layout_below="@id/relativeLayout"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/imageView"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="Wait for the code I sent you..."/>
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/textView"
+        android:textColor="@color/colorPrimary"
+        android:text="I sent you a code, it will be detected automatically but if it is not detected you can put it below manually as well"
+        android:textAlignment="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:id="@+id/editTextCode"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView1"
+        android:maxLength="6"
+        android:hint="enter code"
+        android:inputType="number"
+        android:digits="0123456789"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/buttonSignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/editTextCode"
+        android:textColor="#ffffff"
+        android:text="Sign In"
+        android:textAllCaps="false"/>
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonSignIn"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

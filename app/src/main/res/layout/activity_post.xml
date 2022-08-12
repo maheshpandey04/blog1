@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/add_btn"
+        android:id="@+id/imageSelect"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameField"
+            android:background="@drawable/input_outline"
+            android:padding="15dp"
+            android:hint="UserName"
+            android:layout_below="@+id/imageSelect"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameField"
+            android:id="@+id/t2t2"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            android:layout_marginTop="6dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_outline"
+                android:hint="PhoneNumber"
+                android:inputType="number"
+                android:padding="15dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleField"
+        android:background="@drawable/input_outline"
+        android:padding="15dp"
+        android:hint="Title"
+        android:layout_below="@+id/t2t2"
+        android:layout_marginTop="8dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_outline"
+        android:padding="15dp"
+        android:hint="Post Description...."
+        android:id="@+id/descField"
+        android:layout_below="@+id/titleField"
+        android:layout_marginTop="8dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_outline"
+            android:padding="15dp"
+            android:hint="Post Exchange Product Or Price"
+            android:id="@+id/excField"
+            android:layout_below="@+id/descField"
+            android:layout_marginTop="8dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/excField"
+        android:text="Submit Post"
+        android:id="@+id/submitBtn"
+        android:background="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"/>
+    </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

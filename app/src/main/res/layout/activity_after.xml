@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <androidx.cardview.widget.CardView
+    tools:context=".After"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="4dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="4dp"
+    app:cardBackgroundColor="#fff"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Product Name"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorPurple"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Product Name"
+        android:id="@+id/rTitl"/>
+
+    <ImageView
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:id="@+id/rImag"
+        android:background="@drawable/lo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Owners Name"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorPurple"
+        android:textSize="14sp"
+        android:drawableLeft="@drawable/per"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Username"
+        android:layout_marginTop="4dp"
+        android:textSize="20dp"
+        android:id="@+id/rNam"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Contact Here"
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorPurple"
+        android:textSize="14sp"
+        android:id="@+id/t4"
+        android:drawableLeft="@drawable/ph"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="294dp"
+        android:text="Phonenumber"
+        android:layout_marginTop="4dp"
+        android:textSize="20dp"
+        android:id="@+id/rPhn"/>
+
+        <ImageButton
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pot"
+            android:id="@+id/ophn"/>
+        </LinearLayout>
+
+        <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:text="Description "
+        android:layout_marginTop="0dp"
+        android:textColor="@color/colorPurple"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="This is the description of the product"
+        android:layout_marginTop="4dp"
+        android:textSize="20dp"
+        android:id="@+id/rDes"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="Exchange Or Price "
+            android:layout_marginTop="0dp"
+            android:textColor="@color/colorPurple"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="This is the description of the product"
+            android:layout_marginTop="4dp"
+            android:textSize="20dp"
+            android:id="@+id/rExc"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:id="@+id/li">
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/save"
+        android:background="@drawable/bg_ui"
+        android:drawableLeft="@drawable/save"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Share"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/share"
+        android:background="@drawable/bg_ui"
+        android:drawableLeft="@drawable/share"
+        android:layout_weight="1"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Wall"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/wall"
+        android:background="@drawable/bg_ui"
+        android:drawableLeft="@drawable/wallpaper"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
+        <Button
+            android:id="@+id/upi"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bt_uifb"
+            android:drawableLeft="@drawable/upi4"
+            android:text="PAY WITH UPI"
+            android:textStyle="bold" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="232dp"
+        android:text="Delete Post"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/del"
+        android:background="@drawable/bg_ui"
+        android:drawableLeft="@drawable/del"
+        android:visibility="invisible"
+        android:layout_marginLeft="72dp"/>
+
+</LinearLayout>
+
+</ScrollView>
+
+</androidx.cardview.widget.CardView>

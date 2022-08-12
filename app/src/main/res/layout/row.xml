@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_height="wrap_content"
+app:cardBackgroundColor="#fff"
+app:cardCornerRadius="4dp"
+app:cardElevation="4dp"
+app:contentPadding="4dp"
+app:cardUseCompatPadding="true">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPurple"
+        android:layout_marginTop="0dp"
+        android:text="Product Name"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rTitle"
+        android:text="Product " />
+    <ImageView
+        android:id="@+id/rImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@drawable/lo"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPurple"
+        android:layout_marginTop="0dp"
+        android:text="Owners name"
+        android:id="@+id/t"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/per"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rUsername"
+        android:textSize="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Username"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPurple"
+        android:layout_marginTop="0dp"
+        android:text="Contact Here"
+        android:id="@+id/t4"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:drawableLeft="@drawable/ph"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rPhonenumber"
+        android:textSize="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Phonenumber"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPurple"
+        android:layout_marginTop="0dp"
+        android:text="Description"
+        android:id="@+id/tx"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rDesc"
+        android:textSize="20dp"
+        android:layout_marginTop="4dp"
+        android:text="This is the description of the product"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPurple"
+        android:layout_marginTop="0dp"
+        android:text="Exchange Product or Price"
+        android:id="@+id/txt2"
+        android:textStyle="bold"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rExc"
+        android:textSize="20dp"
+        android:layout_marginTop="4dp"
+        android:text="Enter Product and Price"/>
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
